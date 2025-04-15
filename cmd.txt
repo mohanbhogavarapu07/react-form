@@ -1,0 +1,85 @@
+minikube version
+kubectl version
+minikube start
+kubectl get nodes
+kubectl apply -f deployment.yml --validate=false
+minikube dashboard
+
+
+"homepage": "https://<YOUR_USERNAME>.github.io/event-registration-form"
+
+
+
+# Remove a stopped container 
+docker rm <container_id> 
+ 
+# View logs from a container 
+docker logs <container_id> 
+ 
+# Run a command in a running container (e.g., open bash shell) 
+docker exec -it <container_id> bash 
+ 
+# List all Docker networks 
+docker network ls 
+ 
+# Start a multi-container application defined in docker-compose.yml 
+docker-compose up 
+ 
+# Tag an image with a version 
+docker tag my-app:latest my-app:v1.0 
+ 
+# List all Docker volumes 
+docker volume ls 
+ 
+# Show Docker version information 
+docker version 
+ 
+ 
+�
+�
+ Using Docker Compose Example 
+Here’s an example of a docker-compose.yml file for a simple React app with 
+a backend: 
+ 
+File: docker-compose.yml 
+ 
+version: '3' 
+services: 
+  frontend: 
+    image: my-react-app 
+    ports: 
+      - "3000:3000" 
+    networks: 
+ 
+      - my-network 
+  backend: 
+    image: my-backend 
+    ports: 
+      - "5000:5000" 
+    networks: 
+      - my-network 
+networks: 
+  my-network: 
+ 
+ 
+To start the application: 
+ 
+docker-compose up 
+ 
+ 
+To shut it down: 
+ 
+docker-compose down
+
+
+
+
+
+
+step:create a folder demo 
+step:create a folder mkdir selenium through vscode 
+step:cd selenium 
+step:npm init -y 
+step:npm install selenium-webdriver 
+step:npm install chromedriver 
+step:create 2 files index.html and test.js
